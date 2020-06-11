@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UnknownLib
+namespace UnknownLib.Files
 {
-    public class Class1
+    class ToTxt
     {
     }
 }
