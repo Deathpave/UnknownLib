@@ -49,6 +49,7 @@
     <Compile Include="Files\FromTxt.cs" />
     <Compile Include="Files\ToCsv.cs" />
     <Compile Include="Files\ToTxt.cs" />
+    <Compile Include="Managers\LibraManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

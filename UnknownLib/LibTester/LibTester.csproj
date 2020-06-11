@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UnknownLib\UnknownLib.csproj">
+      <Project>{405ecbb5-db0a-4d15-af6e-11204114c11a}</Project>
+      <Name>UnknownLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
