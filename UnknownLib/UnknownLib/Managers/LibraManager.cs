@@ -7,6 +7,7 @@ using UnknownLib.Binary;
 using UnknownLib.Decryption;
 using UnknownLib.Files;
 using UnknownLib.Encryption;
+using System.Runtime.InteropServices.WindowsRuntime;
 
 namespace UnknownLib.Managers
 {
@@ -34,25 +35,63 @@ namespace UnknownLib.Managers
         #endregion
 
         #region Files Methods
-        public string StringFromTxt(string path)
+        #region FromTxt
+        public string StringFromTxt()
         {
-            return txt.StringFromTxt(path);
+            return txt.StringFromTxt();
         }
 
-        public string[] StringsFromTxt(string path)
+        public string[] StringsFromTxt()
         {
-            return txt.StringsFromTxt(path);
+            return txt.StringsFromTxt();
         }
 
-        public char[] CharsFromTxt(string path)
+        public char[] CharsFromTxt()
         {
-            return txt.CharsFromTxt(path);
+            return txt.CharsFromTxt();
         }
-
+        #endregion
+        #region ToTxt
         public bool StringToTxt(string path, string input)
         {
             return toTxt.StringToTxt(path, input);
         }
+
+        public bool AppendStringToTxt(string path, string input)
+        {
+            return toTxt.AppendStringToTxt(path, input);
+        }
+
+        public bool StringsToTxt(string path, string[] input)
+        {
+            return toTxt.StringsToTxt(path, input);
+        }
+
+        public bool AppendStringsToTxt(string path, string[] input)
+        {
+            return toTxt.AppendStringsToTxt(path, input);
+        }
+
+        public bool CharToTxt(string path, char input)
+        {
+            return toTxt.CharToTxt(path, input);
+        }
+
+        public bool AppendCharToTxt(string path, char input)
+        {
+            return toTxt.AppendCharToTxt(path, input);
+        }
+
+        public bool CharsToTxt(string path, char[] input)
+        {
+            return toTxt.CharsToTxt(path, input);
+        }
+
+        public bool AppendCharsToTxt(string path, char[] input)
+        {
+            return toTxt.AppendCharsToTxt(path, input);
+        }
+        #endregion
         #endregion
 
     }
