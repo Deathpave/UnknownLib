@@ -34,7 +34,7 @@ namespace UnknownLib.Files
             }
         }
 
-        public string[] StringsFromTxt(string path)
+        public string[] StringsFromTxt()
         {
             // lets user select the file to read
             fileDialog.ShowDialog();
@@ -42,7 +42,7 @@ namespace UnknownLib.Files
             if (fileDialog.FileName != null && fileDialog.FileName != string.Empty)
             {
                 // reads file into result array
-                string[] result = File.ReadAllLines(path);
+                string[] result = File.ReadAllLines(fileDialog.FileName);
 
                 // resets the filedialog
                 fileDialog.FileName = string.Empty;
@@ -56,7 +56,7 @@ namespace UnknownLib.Files
             }
         }
 
-        public char[] CharsFromTxt(string path)
+        public char[] CharsFromTxt()
         {
             // lets user select the file to read
             fileDialog.ShowDialog();
@@ -64,7 +64,7 @@ namespace UnknownLib.Files
             if (fileDialog.FileName != null && fileDialog.FileName != string.Empty)
             {
                 // reads file into string text
-                string text = File.ReadAllText(path);
+                string text = File.ReadAllText(fileDialog.FileName);
 
                 // converts string text to result char array
                 char[] result = text.ToCharArray();
