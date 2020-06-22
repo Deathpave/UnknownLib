@@ -13,6 +13,9 @@ namespace UnknownLib.Encryption
         // salt byte array
         byte[] salt = new byte[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 };
 
+        // creates stream to "write" the data
+        MemoryStream memoryStream = new MemoryStream();
+
         // rijndael class
         RijndaelManaged rijndael = new RijndaelManaged();
         public string EncryptString(string input, string password)
@@ -27,8 +30,7 @@ namespace UnknownLib.Encryption
             // vector gets set
             rijndael.IV = rfc.GetBytes(16);
 
-            // creates streams to "write" the data
-            MemoryStream memoryStream = new MemoryStream();
+            // creates stream to "write" the data            
             CryptoStream cryptoStream = new CryptoStream(memoryStream, rijndael.CreateEncryptor(), CryptoStreamMode.Write);
 
             // gets bytes of the input

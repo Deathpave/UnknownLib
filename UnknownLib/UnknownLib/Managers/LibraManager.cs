@@ -34,6 +34,21 @@ namespace UnknownLib.Managers
         ToTxt toTxt = new ToTxt();
         #endregion
 
+        #region Binary
+        #region FromBinary
+        public string BinaryStringToString(string input)
+        {
+            return fromBinary.BinaryStringToString(input);
+        }
+        #endregion
+        #region ToBinary
+        public string StringToBinary(string input)
+        {
+            return toBinary.StringToBinary(input);
+        }
+        #endregion
+        #endregion
+
         #region Decryption
         #region Decrypt
 
