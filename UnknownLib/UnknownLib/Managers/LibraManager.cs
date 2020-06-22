@@ -29,8 +29,6 @@ namespace UnknownLib.Managers
         #endregion
         #region Files Folder
         FromTxt txt = new FromTxt();
-        FromCsv csv = new FromCsv();
-        ToCsv toCsv = new ToCsv();
         ToTxt toTxt = new ToTxt();
         #endregion
 
