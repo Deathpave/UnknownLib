@@ -13,10 +13,21 @@ namespace LibTester
         {
             UnknownLib.Managers.LibraManager manager = new UnknownLib.Managers.LibraManager();
 
+            string pass = "Kagemanden";
+
             string input = Console.ReadLine();
             string binary = manager.StringToBinary(input);
             Console.WriteLine(binary);
-            Console.WriteLine(manager.BinaryStringToString(binary));
+
+            string encrypted = manager.EncryptString(binary, pass);
+            Console.WriteLine(encrypted);
+
+            string decrypted = manager.DecryptString(encrypted, pass);
+            Console.WriteLine(decrypted);
+
+            string text = manager.BinaryStringToString(decrypted);
+            Console.WriteLine(text);
+
             Console.ReadLine();
         }
     }

@@ -57,6 +57,11 @@ namespace UnknownLib.Managers
             return decrypt.DecryptString(encrypted, password);
         }
 
+        public string DecryptString(string encrypted, string password, int itterations)
+        {
+            return decrypt.DecryptString(encrypted, password, itterations);
+        }
+
         #endregion
         #endregion
 
@@ -66,6 +71,11 @@ namespace UnknownLib.Managers
         public string EncryptString(string input, string password)
         {
             return encrypt.EncryptString(input, password);
+        }
+
+        public string EncryptString(string input, string password, int itterations)
+        {
+            return encrypt.EncryptString(input, password, itterations);
         }
 
         #endregion
