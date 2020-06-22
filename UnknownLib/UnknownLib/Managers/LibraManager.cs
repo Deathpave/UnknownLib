@@ -34,6 +34,28 @@ namespace UnknownLib.Managers
         ToTxt toTxt = new ToTxt();
         #endregion
 
+        #region Decryption
+        #region Decrypt
+
+        public string DecryptString(string encrypted, string password)
+        {
+            return decrypt.DecryptString(encrypted, password);
+        }
+
+        #endregion
+        #endregion
+
+        #region Encryption
+        #region Encrypt
+
+        public string EncryptString(string input, string password)
+        {
+            return encrypt.EncryptString(input, password);
+        }
+
+        #endregion
+        #endregion
+
         #region Files Methods
         #region FromTxt
         public string StringFromTxt()
