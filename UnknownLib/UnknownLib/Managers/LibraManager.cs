@@ -27,11 +27,12 @@ namespace UnknownLib.Managers
         #region Encryption
         Encrypt encrypt = new Encrypt();
         #endregion
-        #region Files Folder
+        #region Files
         FromTxt txt = new FromTxt();
         ToTxt toTxt = new ToTxt();
         #endregion
 
+        // methods from classes
         #region Binary
         #region FromBinary
         public string BinaryStringToString(string input)
@@ -79,7 +80,7 @@ namespace UnknownLib.Managers
         #endregion
         #endregion
 
-        #region Files Methods
+        #region Files
         #region FromTxt
         public string StringFromTxt()
         {
