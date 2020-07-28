@@ -1,1 +1,4 @@
-﻿
+﻿---------- To do list ----------
+
+Files:
+remove path requirement from to txt methods

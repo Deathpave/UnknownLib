@@ -3,32 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Threading;
 using UnknownLib.Managers;
 
 namespace LibTester
 {
     class Program
     {
+        [STAThread]
         static void Main(string[] args)
         {
             UnknownLib.Managers.LibraManager manager = new UnknownLib.Managers.LibraManager();
 
-            string pass = "Kagemanden";
+            string[] test = new string[] { "kage,mand", "test,objekt" };
 
-            string input = Console.ReadLine();
-            string binary = manager.StringToBinary(input);
-            Console.WriteLine(binary);
-
-            string encrypted = manager.EncryptString(binary, pass);
-            Console.WriteLine(encrypted);
-
-            string decrypted = manager.DecryptString(encrypted, pass);
-            Console.WriteLine(decrypted);
-
-            string text = manager.BinaryStringToString(decrypted);
-            Console.WriteLine(text);
-
-            Console.ReadLine();
+            manager.StringsToCsv(test);
         }
     }
 }

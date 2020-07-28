@@ -46,7 +46,9 @@
     <Compile Include="Binary\ToBinary.cs" />
     <Compile Include="Decryption\Decrypt.cs" />
     <Compile Include="Encryption\Encrypt.cs" />
+    <Compile Include="Files\FromCsv.cs" />
     <Compile Include="Files\FromTxt.cs" />
+    <Compile Include="Files\ToCsv.cs" />
     <Compile Include="Files\ToTxt.cs" />
     <Compile Include="Managers\LibraManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -30,6 +30,8 @@ namespace UnknownLib.Managers
         #region Files
         FromTxt txt = new FromTxt();
         ToTxt toTxt = new ToTxt();
+        FromCsv csv = new FromCsv();
+        ToCsv toCsv = new ToCsv();
         #endregion
 
         // methods from classes
@@ -136,6 +138,18 @@ namespace UnknownLib.Managers
         public bool AppendCharsToTxt(string path, char[] input)
         {
             return toTxt.AppendCharsToTxt(path, input);
+        }
+        #endregion
+        #region FromCsv
+        public List<string[]> ListStringsFromCsv()
+        {
+            return csv.ListStringArraysFromCsv();
+        }
+        #endregion
+        #region ToCsv
+        public bool StringsToCsv(string[] input)
+        {
+            return toCsv.StringsToCsv(input);
         }
         #endregion
         #endregion
