@@ -1,4 +1,3 @@
 ﻿---------- To do list ----------
 
 Objects:
-Create a method to write all properties of any object

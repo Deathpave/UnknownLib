@@ -51,13 +51,12 @@
     <Compile Include="Files\ToCsv.cs" />
     <Compile Include="Files\ToTxt.cs" />
     <Compile Include="Managers\LibraManager.cs" />
+    <Compile Include="Objects\ReadObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ToDo.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Objects\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

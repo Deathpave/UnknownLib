@@ -228,7 +228,7 @@ namespace UnknownLib.Files
                 if (SaveFileDialog.FileName != null && SaveFileDialog.FileName != string.Empty)
                 {
                     // overrides the file with the input chars
-                    File.WriteAllLines(SaveFileDialog.FileName, sInput));
+                    File.WriteAllLines(SaveFileDialog.FileName, sInput);
 
                     // if the file has been written to, returns true
                     return true;

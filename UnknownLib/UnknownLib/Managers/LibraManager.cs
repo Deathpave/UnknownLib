@@ -8,6 +8,7 @@ using UnknownLib.Decryption;
 using UnknownLib.Files;
 using UnknownLib.Encryption;
 using System.Runtime.InteropServices.WindowsRuntime;
+using UnknownLib.Objects;
 
 namespace UnknownLib.Managers
 {
@@ -32,6 +33,9 @@ namespace UnknownLib.Managers
         ToTxt toTxt = new ToTxt();
         FromCsv csv = new FromCsv();
         ToCsv toCsv = new ToCsv();
+        #endregion
+        #region Objects
+        ReadObject readObject = new ReadObject();
         #endregion
 
         // methods from classes
@@ -117,12 +121,12 @@ namespace UnknownLib.Managers
 
         public bool AppendStringsToTxt(string[] input)
         {
-            return toTxt.AppendStringsToTxt(, input);
+            return toTxt.AppendStringsToTxt(input);
         }
 
         public bool CharToTxt(char input)
         {
-            return toTxt.CharToTxt(, input);
+            return toTxt.CharToTxt(input);
         }
 
         public bool AppendCharToTxt(char input)
@@ -154,5 +158,11 @@ namespace UnknownLib.Managers
         #endregion
         #endregion
 
+        #region Objects
+        public List<string> ReadObject(object o)
+        {
+            return readObject.ObjectProperties(o);
+        }
+        #endregion
     }
 }
