@@ -100,44 +100,44 @@ namespace UnknownLib.Managers
         }
         #endregion
         #region ToTxt
-        public bool StringToTxt(string path, string input)
+        public bool StringToTxt(string input)
         {
-            return toTxt.StringToTxt(path, input);
+            return toTxt.StringToTxt(input);
         }
 
-        public bool AppendStringToTxt(string path, string input)
+        public bool AppendStringToTxt(string input)
         {
-            return toTxt.AppendStringToTxt(path, input);
+            return toTxt.AppendStringToTxt(input);
         }
 
-        public bool StringsToTxt(string path, string[] input)
+        public bool StringsToTxt(string[] input)
         {
-            return toTxt.StringsToTxt(path, input);
+            return toTxt.StringsToTxt(input);
         }
 
-        public bool AppendStringsToTxt(string path, string[] input)
+        public bool AppendStringsToTxt(string[] input)
         {
-            return toTxt.AppendStringsToTxt(path, input);
+            return toTxt.AppendStringsToTxt(, input);
         }
 
-        public bool CharToTxt(string path, char input)
+        public bool CharToTxt(char input)
         {
-            return toTxt.CharToTxt(path, input);
+            return toTxt.CharToTxt(, input);
         }
 
-        public bool AppendCharToTxt(string path, char input)
+        public bool AppendCharToTxt(char input)
         {
-            return toTxt.AppendCharToTxt(path, input);
+            return toTxt.AppendCharToTxt(input);
         }
 
-        public bool CharsToTxt(string path, char[] input)
+        public bool CharsToTxt(char[] input)
         {
-            return toTxt.CharsToTxt(path, input);
+            return toTxt.CharsToTxt(input);
         }
 
-        public bool AppendCharsToTxt(string path, char[] input)
+        public bool AppendCharsToTxt(char[] input)
         {
-            return toTxt.AppendCharsToTxt(path, input);
+            return toTxt.AppendCharsToTxt(input);
         }
         #endregion
         #region FromCsv

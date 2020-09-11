@@ -174,7 +174,7 @@ namespace UnknownLib.Files
             }
         }
 
-        public bool AppendCharToTxt(string path, char input)
+        public bool AppendCharToTxt(char input)
         {
             try
             {
@@ -246,7 +246,7 @@ namespace UnknownLib.Files
             }
         }
 
-        public bool AppendCharsToTxt(string path, char[] input)
+        public bool AppendCharsToTxt(char[] input)
         {
             try
             {

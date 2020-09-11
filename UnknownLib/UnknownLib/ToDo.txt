@@ -1,4 +1,4 @@
 ﻿---------- To do list ----------
 
-Files:
-remove path requirement from totxt methods
+Objects:
+Create a method to write all properties of any object
