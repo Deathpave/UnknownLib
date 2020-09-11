@@ -1,4 +1,4 @@
 ﻿---------- To do list ----------
 
 Files:
-remove path requirement from to txt methods
+remove path requirement from totxt methods

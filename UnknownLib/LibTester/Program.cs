@@ -15,9 +15,7 @@ namespace LibTester
         {
             UnknownLib.Managers.LibraManager manager = new UnknownLib.Managers.LibraManager();
 
-            string[] test = new string[] { "kage,mand", "test,objekt" };
 
-            manager.StringsToCsv(test);
         }
     }
 }
