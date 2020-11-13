@@ -56,7 +56,9 @@
     <Compile Include="Managers\Interfaces\ICsv.cs" />
     <Compile Include="Managers\Interfaces\IDecryption.cs" />
     <Compile Include="Managers\Interfaces\IEncryption.cs" />
+    <Compile Include="Managers\Interfaces\IFromBinary.cs" />
     <Compile Include="Managers\Interfaces\IFromTxt.cs" />
+    <Compile Include="Managers\Interfaces\IToBinary.cs" />
     <Compile Include="Managers\Interfaces\IToTxt.cs" />
     <Compile Include="Managers\Interfaces\ITxt.cs" />
     <Compile Include="Managers\LibraManager.cs" />

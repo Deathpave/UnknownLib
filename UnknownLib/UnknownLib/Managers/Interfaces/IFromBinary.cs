@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace UnknownLib.Managers.Interfaces
 {
-    public interface IBinary : IToBinary, IFromBinary
+    public interface IFromBinary
     {
+        string BinaryStringToString(string BinaryInput);
     }
 }
