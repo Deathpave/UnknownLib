@@ -50,7 +50,12 @@
     <Compile Include="Files\FromTxt.cs" />
     <Compile Include="Files\ToCsv.cs" />
     <Compile Include="Files\ToTxt.cs" />
+    <Compile Include="Managers\BinaryManager.cs" />
+    <Compile Include="Managers\Interfaces\IBinary.cs" />
+    <Compile Include="Managers\Interfaces\IDecryption.cs" />
+    <Compile Include="Managers\Interfaces\IEncryption.cs" />
     <Compile Include="Managers\LibraManager.cs" />
+    <Compile Include="Managers\SecurityManager.cs" />
     <Compile Include="Network Tools\Connectivity.cs" />
     <Compile Include="Network Tools\DHCP.cs" />
     <Compile Include="Network Tools\DNS.cs" />
