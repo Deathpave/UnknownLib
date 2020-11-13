@@ -4,7 +4,7 @@ using System.Net;
 using System.Net.NetworkInformation;
 using System.Text;
 
-namespace Refactoring
+namespace UnknownLib.NetworkTools
 {
     /// <summary>
     /// Class for DHCP tools

@@ -9,11 +9,8 @@ namespace UnknownLib.Objects
 {
     class ReadObject
     {
-        public List<string> ObjectProperties(object o)
+        public List<string> ObjectProperties(object o, List<string> result)
         {
-            // creates a new list for strings
-            List<string> result = new List<string>();
-
             // gets the type of the input object
             Type type = o.GetType();
 

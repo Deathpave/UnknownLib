@@ -1,3 +1,10 @@
 ﻿---------- To do list ----------
 
-Objects:
+rework encryption and decryption
+so it applies dependency inversion/injection.
+to remove news in classes other then managers
+
+rework files classes, so they dont contain news.
+fromcsv "needs" a new list of arrays to return.
+
+make methods for network tools in libmanager

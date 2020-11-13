@@ -9,6 +9,7 @@ using UnknownLib.Files;
 using UnknownLib.Encryption;
 using System.Runtime.InteropServices.WindowsRuntime;
 using UnknownLib.Objects;
+using UnknownLib.NetworkTools;
 
 namespace UnknownLib.Managers
 {
@@ -19,23 +20,28 @@ namespace UnknownLib.Managers
     {
         // classes with methods
         #region Binary
-        FromBinary fromBinary = new FromBinary();
-        ToBinary toBinary = new ToBinary();
+        private FromBinary fromBinary = new FromBinary();
+        private ToBinary toBinary = new ToBinary();
         #endregion
         #region Decryption
-        Decrypt decrypt = new Decrypt();
+        private Decrypt decrypt = new Decrypt();
         #endregion
         #region Encryption
-        Encrypt encrypt = new Encrypt();
+        private Encrypt encrypt = new Encrypt();
         #endregion
         #region Files
-        FromTxt txt = new FromTxt();
-        ToTxt toTxt = new ToTxt();
-        FromCsv csv = new FromCsv();
-        ToCsv toCsv = new ToCsv();
+        private FromTxt txt = new FromTxt();
+        private ToTxt toTxt = new ToTxt();
+        private FromCsv csv = new FromCsv();
+        private ToCsv toCsv = new ToCsv();
         #endregion
         #region Objects
-        ReadObject readObject = new ReadObject();
+        private ReadObject readObject = new ReadObject();
+        #endregion
+        #region NetworkTools
+        private DHCP DHCP = new DHCP();
+        private DNS DNS = new DNS();
+        private Connectivity connectivity = new Connectivity();
         #endregion
 
         // methods from classes
@@ -161,7 +167,34 @@ namespace UnknownLib.Managers
         #region Objects
         public List<string> ReadObject(object o)
         {
-            return readObject.ObjectProperties(o);
+            return readObject.ObjectProperties(o, new List<string>());
+        }
+        #endregion
+
+        #region NetworkTools
+        public string IpFromHostname(string Hostname)
+        {
+            return DNS.GetIpFromHostname(Hostname);
+        }
+
+        public string HostnameFromIp(string Ip)
+        {
+            return DNS.GetHostnameFromIp(Ip);
+        }
+
+        public string LocalPing()
+        {
+            return connectivity.LocalPing(new StringBuilder(), new Ping());
+        }
+
+        public string Traceroute(string IpAddressOrHostname)
+        {
+            return connectivity.Traceroute(IpAddressOrHostname, new StringBuilder());
+        }
+
+        public string DisplayDHCPServerAddresses()
+        {
+            return DHCP.DisplayDhcpServerAddresses(new StringBuilder());
         }
         #endregion
     }

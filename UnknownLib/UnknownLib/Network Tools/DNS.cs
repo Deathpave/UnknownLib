@@ -5,7 +5,7 @@ using System.Net.Sockets;
 using System.Security;
 using System.Text;
 
-namespace Refactoring
+namespace UnknownLib.NetworkTools
 {
     /// <summary>
     /// Class for DNS tools
