@@ -16,3 +16,5 @@ this will make customizesation easier.
 
 
 Add error handling to classes and managers.
+
+split csv interface and add append methods to csv class

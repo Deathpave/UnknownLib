@@ -28,5 +28,23 @@ namespace UnknownLib.Files
 
             return false;
         }
+
+        public bool StringToCsv(string input)
+        {
+            SaveFileDialog.Filter = "*.csv|*.csv";
+            // lets the user select where to save
+            SaveFileDialog.ShowDialog();
+
+            // checks if the filename is valid
+            if (SaveFileDialog.FileName != null && SaveFileDialog.FileName != string.Empty)
+            {
+                // appends all lines in input array
+                File.AppendAllText(SaveFileDialog.FileName, input + Environment.NewLine);
+
+                return true;
+            }
+
+            return false;
+        }
     }
 }
