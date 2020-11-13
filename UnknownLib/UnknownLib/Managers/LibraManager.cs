@@ -10,6 +10,7 @@ using UnknownLib.Encryption;
 using System.Runtime.InteropServices.WindowsRuntime;
 using UnknownLib.Objects;
 using UnknownLib.NetworkTools;
+using System.Net.NetworkInformation;
 
 namespace UnknownLib.Managers
 {

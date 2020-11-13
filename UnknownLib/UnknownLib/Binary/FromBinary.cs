@@ -12,7 +12,6 @@ namespace UnknownLib.Binary
         public string BinaryStringToString(string input)
         {
             int count = 0;
-            string bytes = string.Empty;
             string result = string.Empty;
 
             while (count < input.Length)
