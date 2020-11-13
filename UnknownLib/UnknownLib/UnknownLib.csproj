@@ -51,6 +51,9 @@
     <Compile Include="Files\ToCsv.cs" />
     <Compile Include="Files\ToTxt.cs" />
     <Compile Include="Managers\LibraManager.cs" />
+    <Compile Include="Network Tools\Connectivity.cs" />
+    <Compile Include="Network Tools\DHCP.cs" />
+    <Compile Include="Network Tools\DNS.cs" />
     <Compile Include="Objects\ReadObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
