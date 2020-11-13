@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnknownLib.Decryption;
+﻿using UnknownLib.Decryption;
 using UnknownLib.Encryption;
 using UnknownLib.Managers.Interfaces;
 

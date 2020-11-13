@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Text;
-using System.Threading.Tasks;
 using UnknownLib.Binary;
 using UnknownLib.Decryption;
 using UnknownLib.Files;
 using UnknownLib.Encryption;
-using System.Runtime.InteropServices.WindowsRuntime;
 using UnknownLib.Objects;
 using UnknownLib.NetworkTools;
 using System.Net.NetworkInformation;

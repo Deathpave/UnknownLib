@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnknownLib.Binary;
+﻿using UnknownLib.Binary;
 using UnknownLib.Managers.Interfaces;
 
 namespace UnknownLib.Managers
