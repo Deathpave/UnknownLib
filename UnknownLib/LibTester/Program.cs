@@ -5,7 +5,6 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Threading;
-using UnknownLib.Managers;
 
 namespace LibTester
 {
@@ -19,9 +18,10 @@ namespace LibTester
         [STAThread]
         static void Main(string[] args)
         {
-            UnknownLib.Managers.LibraManager manager = new UnknownLib.Managers.LibraManager();
-
-            Console.ReadLine();
+            using (UnknownLib.Managers.SecurityManager manager = new UnknownLib.Managers.SecurityManager())
+            {
+                
+            }
 
         }
     }

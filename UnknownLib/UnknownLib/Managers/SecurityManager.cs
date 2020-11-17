@@ -1,10 +1,11 @@
-﻿using UnknownLib.Decryption;
+﻿using System;
+using UnknownLib.Decryption;
 using UnknownLib.Encryption;
 using UnknownLib.Managers.Interfaces;
 
 namespace UnknownLib.Managers
 {
-    public class SecurityManager : IEncryption, IDecryption
+    public class SecurityManager : IEncryption, IDecryption, IDisposable
     {
         private Encrypt encrypt = new Encrypt();
         private Decrypt decrypt = new Decrypt();
@@ -16,6 +17,11 @@ namespace UnknownLib.Managers
         public string DecryptString(string encrypted, string password, int itterations)
         {
             return decrypt.DecryptString(encrypted, password, itterations);
+        }
+
+        public void Dispose()
+        {
+            throw new NotImplementedException();
         }
 
         public string EncryptString(string input, string password)
