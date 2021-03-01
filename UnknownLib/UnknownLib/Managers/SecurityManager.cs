@@ -37,12 +37,16 @@ namespace UnknownLib.Managers
 
         // hashing overloads for different inputs
         // string input, byte input, with and without password
-        public void Hash(HashType type, string input)
+        // needs to return byte or string depending on input
+        // if string input => string output
+        // if byte input => byte output
+        public string Hash(HashType type, string input)
         {
             switch (type)
             {
                 case HashType.Md5Hash:
-                    break;
+                    Md5Hash md5 = new Md5Hash();
+                    return md5.Hash(input);
                 case HashType.Sha1Hash:
                     break;
                 case HashType.Sha2Hash:
@@ -51,10 +55,13 @@ namespace UnknownLib.Managers
                     break;
                 case HashType.Sha5Hash:
                     break;
+                default:
+                    return "Cannot hash with this input";
             }
+            return "Something went wrong during hashing attempt";
         }
 
-        public void Hash(HashType type, string input, string password)
+        public string Hash(HashType type, string input, string password)
         {
             switch (type)
             {
@@ -62,15 +69,19 @@ namespace UnknownLib.Managers
                     break;
                 case HashType.HmacSha2:
                     break;
+                default:
+                    return "Cannot hash with these inputs";
             }
+            return "Something went wrong during hashing";
         }
 
-        public void Hash(HashType type, byte[] input)
+        public byte[] Hash(HashType type, byte[] input)
         {
             switch (type)
             {
                 case HashType.Md5Hash:
-                    break;
+                    Md5Hash md5 = new Md5Hash();
+                    return md5.Hash(input);
                 case HashType.Sha1Hash:
                     break;
                 case HashType.Sha2Hash:
@@ -79,32 +90,24 @@ namespace UnknownLib.Managers
                     break;
                 case HashType.Sha5Hash:
                     break;
-                case HashType.HmacSha1:
-                    break;
-                case HashType.HmacSha2:
-                    break;
+                default:
+                    return null;
             }
+            return null;
         }
 
-        public void Hash(HashType type, byte[] input, byte[] password)
+        public byte[] Hash(HashType type, byte[] input, byte[] password)
         {
             switch (type)
             {
-                case HashType.Md5Hash:
-                    break;
-                case HashType.Sha1Hash:
-                    break;
-                case HashType.Sha2Hash:
-                    break;
-                case HashType.Sha3Hash:
-                    break;
-                case HashType.Sha5Hash:
-                    break;
                 case HashType.HmacSha1:
                     break;
                 case HashType.HmacSha2:
                     break;
+                default:
+                    return null;
             }
+            return null;
         }
     }
 }

@@ -19,6 +19,8 @@ namespace LibTester
         [STAThread]
         static void Main(string[] args)
         {
+            UnknownLib.Managers.SecurityManager sec = new UnknownLib.Managers.SecurityManager();
+            string a = "Kage er godt!";
 
         }
     }
