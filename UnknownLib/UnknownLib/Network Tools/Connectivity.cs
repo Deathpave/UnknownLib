@@ -9,7 +9,7 @@ namespace UnknownLib.NetworkTools
     /// <summary>
     /// Class to test connectivity
     /// </summary>
-    public class Connectivity
+    internal class Connectivity
     {
         // Methos to test local netcard
         public string LocalPing(StringBuilder stringBuilder, Ping pingSender)

@@ -8,7 +8,7 @@ namespace UnknownLib.NetworkTools
     /// <summary>
     /// Class for DNS tools
     /// </summary>
-    public class DNS
+    internal class DNS
     {
         // Method to get ipadress from hostname
         public string GetIpFromHostname(string Hostname)

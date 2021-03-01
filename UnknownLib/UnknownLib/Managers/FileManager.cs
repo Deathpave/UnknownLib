@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnknownLib.Files;
 
 namespace UnknownLib.Managers
@@ -71,6 +72,26 @@ namespace UnknownLib.Managers
         public bool StringToTxt(string input)
         {
             return toTxt.StringToTxt(input);
+        }
+
+        public bool StringToCsv(string input)
+        {
+            return toCsv.StringToCsv(input);
+        }
+
+        public bool StringsToCsv(string[] input)
+        {
+            return toCsv.StringsToCsv(input);
+        }
+
+        public string StringFromCsv()
+        {
+            return fromCsv.ToString();
+        }
+
+        public List<string> ListStringArraysFromCsv()
+        {
+            return fromCsv.ListStringArraysFromCsv();
         }
     }
 }

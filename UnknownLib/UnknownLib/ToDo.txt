@@ -4,13 +4,6 @@ Rework encryption/decryption, so that there is a standard rijndael, that takes a
 That takes pass, salt, itterations.
 Set up to have different types of encryption methods?
 
-Rework files classes, so they dont contain news.
-Fromcsv "needs" a new list of arrays to return.
-
-Make methods for network tools in libmanager
 Make networkmanager
-Make network tools internal classes, so only managers can access them
 
 Add error handling to classes and managers.
-
-Add hashing methods, and add them to security manager.

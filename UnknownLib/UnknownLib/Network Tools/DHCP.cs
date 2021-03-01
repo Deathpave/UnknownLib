@@ -8,7 +8,7 @@ namespace UnknownLib.NetworkTools
     /// <summary>
     /// Class for DHCP tools
     /// </summary>
-    public class DHCP
+    internal class DHCP
     {
         // Method to dislay dhcp server's ipaddress
         public string DisplayDhcpServerAddresses(StringBuilder stringBuilder)
