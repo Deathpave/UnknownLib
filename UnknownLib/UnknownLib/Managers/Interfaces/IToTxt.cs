@@ -1,6 +1,6 @@
 ﻿namespace UnknownLib.Managers.Interfaces
 {
-    public interface IToTxt
+    internal interface IToTxt
     {
         bool StringToTxt(string input);
         bool AppendStringToTxt(string input);

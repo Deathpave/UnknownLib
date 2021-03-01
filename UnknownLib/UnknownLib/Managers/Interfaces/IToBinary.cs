@@ -1,6 +1,6 @@
 ﻿namespace UnknownLib.Managers.Interfaces
 {
-    public interface IToBinary
+    internal interface IToBinary
     {
         string StringToBinary(string input);
     }

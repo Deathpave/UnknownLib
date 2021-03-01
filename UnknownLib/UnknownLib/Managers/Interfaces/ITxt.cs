@@ -1,6 +1,6 @@
 ﻿namespace UnknownLib.Managers.Interfaces
 {
-    public interface ITxt : IToTxt, IFromTxt
+    internal interface ITxt : IToTxt, IFromTxt
     {
     }
 }

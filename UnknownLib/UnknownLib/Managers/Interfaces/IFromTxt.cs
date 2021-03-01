@@ -1,6 +1,6 @@
 ﻿namespace UnknownLib.Managers.Interfaces
 {
-    public interface IFromTxt
+    internal interface IFromTxt
     {
         string StringFromTxt();
         string[] StringsFromTxt();

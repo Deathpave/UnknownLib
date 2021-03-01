@@ -2,7 +2,7 @@
 
 namespace UnknownLib.Managers.Interfaces
 {
-    public interface ICsv
+    internal interface ICsv
     {
         List<string[]> ListStringsFromCsv();
         bool StringsToCsv(string[] input);

@@ -1,6 +1,6 @@
 ﻿namespace UnknownLib.Managers.Interfaces
 {
-    public interface IBinary : IToBinary, IFromBinary
+    internal interface IBinary : IToBinary, IFromBinary
     {
     }
 }
