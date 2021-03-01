@@ -8,13 +8,6 @@ rework files classes, so they dont contain news.
 fromcsv "needs" a new list of arrays to return.
 
 make methods for network tools in libmanager
-
-Interfaces for folders / areas
-this will make customizesation easier.
- e.g. you only need to decrypt something, but dont want encryption.
- you can make a custom manager with the IDecryption interface and implement the Decrypt class
-
+make networkmanager
 
 Add error handling to classes and managers.
-
-split csv interface and add append methods to csv class
