@@ -53,7 +53,8 @@ namespace UnknownLib.Managers
                     Sha2Hash sha2 = new Sha2Hash();
                     return sha2.Hash(input);
                 case HashType.Sha3Hash:
-                    break;
+                    Sha3Hash sha3 = new Sha3Hash();
+                    return sha3.Hash(input);
                 case HashType.Sha5Hash:
                     break;
                 default:
@@ -90,7 +91,8 @@ namespace UnknownLib.Managers
                     Sha2Hash sha2 = new Sha2Hash();
                     return sha2.Hash(input);
                 case HashType.Sha3Hash:
-                    break;
+                    Sha3Hash sha3 = new Sha3Hash();
+                    return sha3.Hash(input);
                 case HashType.Sha5Hash:
                     break;
                 default:
