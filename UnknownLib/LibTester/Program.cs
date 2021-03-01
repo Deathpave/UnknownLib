@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,10 +19,6 @@ namespace LibTester
         [STAThread]
         static void Main(string[] args)
         {
-            using (UnknownLib.Managers.SecurityManager manager = new UnknownLib.Managers.SecurityManager())
-            {
-                
-            }
 
         }
     }
