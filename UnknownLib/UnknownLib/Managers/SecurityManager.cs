@@ -56,7 +56,8 @@ namespace UnknownLib.Managers
                     Sha3Hash sha3 = new Sha3Hash();
                     return sha3.Hash(input);
                 case HashType.Sha5Hash:
-                    break;
+                    Sha5Hash sha5 = new Sha5Hash();
+                    return sha5.Hash(input);
                 default:
                     return "Cannot hash with this input";
             }
@@ -94,7 +95,8 @@ namespace UnknownLib.Managers
                     Sha3Hash sha3 = new Sha3Hash();
                     return sha3.Hash(input);
                 case HashType.Sha5Hash:
-                    break;
+                    Sha5Hash sha5 = new Sha5Hash();
+                    return sha5.Hash(input);
                 default:
                     return null;
             }
