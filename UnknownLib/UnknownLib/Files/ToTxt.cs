@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace UnknownLib.Files
 {
-    class ToTxt
+    internal class ToTxt
     {
         SaveFileDialog SaveFileDialog = new SaveFileDialog();
         public bool StringToTxt(string input)

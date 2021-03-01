@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace UnknownLib.Files
 {
-    class ToCsv
+    internal class ToCsv
     {
         SaveFileDialog SaveFileDialog = new SaveFileDialog();
         public bool StringsToCsv(string[] input)

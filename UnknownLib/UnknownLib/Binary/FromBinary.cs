@@ -2,7 +2,7 @@
 
 namespace UnknownLib.Binary
 {
-    class FromBinary
+    internal class FromBinary
     {
         public string BinaryStringToString(string input)
         {

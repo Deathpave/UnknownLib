@@ -4,7 +4,7 @@ using System.Reflection;
 
 namespace UnknownLib.Objects
 {
-    class ReadObject
+    internal class ReadObject
     {
         public List<string> ObjectProperties(object o, List<string> result)
         {

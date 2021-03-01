@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace UnknownLib.Files
 {
-    class FromTxt
+    internal class FromTxt
     {
         OpenFileDialog fileDialog = new OpenFileDialog();
 

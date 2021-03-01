@@ -3,7 +3,7 @@ using System.Text;
 
 namespace UnknownLib.Binary
 {
-    class ToBinary
+    internal class ToBinary
     {
         public string StringToBinary(string input)
         {

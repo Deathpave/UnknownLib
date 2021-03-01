@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace UnknownLib.Files
 {
-    class FromCsv
+    internal class FromCsv
     {
         OpenFileDialog fileDialog = new OpenFileDialog();
         List<string[]> result = new List<string[]>();

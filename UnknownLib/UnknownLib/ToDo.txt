@@ -1,13 +1,16 @@
 ﻿---------- To do list ----------
 
-rework encryption and decryption
-so it applies dependency inversion/injection.
-to remove news in classes other then managers
+Rework encryption/decryption, so that there is a standard rijndael, that takes a pass, pass and itterations and a rijndaelplus.
+That takes pass, salt, itterations.
+Set up to have different types of encryption methods?
 
-rework files classes, so they dont contain news.
-fromcsv "needs" a new list of arrays to return.
+Rework files classes, so they dont contain news.
+Fromcsv "needs" a new list of arrays to return.
 
-make methods for network tools in libmanager
-make networkmanager
+Make methods for network tools in libmanager
+Make networkmanager
+Make network tools internal classes, so only managers can access them
 
 Add error handling to classes and managers.
+
+Add hashing methods, and add them to security manager.

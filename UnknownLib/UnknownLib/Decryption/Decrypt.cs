@@ -5,7 +5,7 @@ using System.Text;
 
 namespace UnknownLib.Decryption
 {
-    class Decrypt
+    internal class Decrypt
     {
         // salt byte array
         byte[] salt = new byte[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 };
