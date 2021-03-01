@@ -18,7 +18,7 @@ namespace UnknownLib.Hashing
 
         public string Hash(string input)
         {
-            return Encoding.UTF8.GetString(mD5.ComputeHash(Encoding.UTF8.GetBytes(input)));
+            return Convert.ToBase64String(mD5.ComputeHash(Encoding.UTF8.GetBytes(input)));
         }
     }
 }

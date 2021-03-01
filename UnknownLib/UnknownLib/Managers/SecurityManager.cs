@@ -47,7 +47,8 @@ namespace UnknownLib.Managers
                     Md5Hash md5 = new Md5Hash();
                     return md5.Hash(input);
                 case HashType.Sha1Hash:
-                    break;
+                    Sha1Hash sha1 = new Sha1Hash();
+                    return sha1.Hash(input);
                 case HashType.Sha2Hash:
                     break;
                 case HashType.Sha3Hash:
@@ -82,7 +83,8 @@ namespace UnknownLib.Managers
                     Md5Hash md5 = new Md5Hash();
                     return md5.Hash(input);
                 case HashType.Sha1Hash:
-                    break;
+                    Sha1Hash sha1 = new Sha1Hash();
+                    return sha1.Hash(input);
                 case HashType.Sha2Hash:
                     break;
                 case HashType.Sha3Hash:
