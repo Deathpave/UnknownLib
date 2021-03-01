@@ -55,6 +55,7 @@
     <Compile Include="Hashing\IHmac.cs" />
     <Compile Include="Hashing\Md5Hash.cs" />
     <Compile Include="Hashing\Sha1Hash.cs" />
+    <Compile Include="Hashing\Sha2Hash.cs" />
     <Compile Include="Managers\BinaryManager.cs" />
     <Compile Include="Managers\FileManager.cs" />
     <Compile Include="Managers\LibraManager.cs" />

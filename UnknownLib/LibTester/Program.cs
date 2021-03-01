@@ -22,7 +22,9 @@ namespace LibTester
             UnknownLib.Managers.SecurityManager sec = new UnknownLib.Managers.SecurityManager();
             string a = "Kage er godt!";
             Console.WriteLine(a);
+            Console.WriteLine("\nMd5 hash:");
             Console.WriteLine(sec.Hash(UnknownLib.Hashing.HashType.Md5Hash, a));
+            Console.WriteLine("\nSha1 hash:");
             Console.WriteLine(sec.Hash(UnknownLib.Hashing.HashType.Sha1Hash, a));
             Console.ReadLine();
         }
