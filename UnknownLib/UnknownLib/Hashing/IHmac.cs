@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UnknownLib.Hashing
 {
-    internal interface IHmac : IHash
+    internal interface IHmac
     {
         string Hash(string input, string password);
         byte[] Hash(byte[] input, byte[] password);

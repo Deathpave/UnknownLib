@@ -51,6 +51,7 @@
     <Compile Include="Files\ToCsv.cs" />
     <Compile Include="Files\ToTxt.cs" />
     <Compile Include="Hashing\HashType.cs" />
+    <Compile Include="Hashing\HmacSha1.cs" />
     <Compile Include="Hashing\IHash.cs" />
     <Compile Include="Hashing\IHmac.cs" />
     <Compile Include="Hashing\Md5Hash.cs" />

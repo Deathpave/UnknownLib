@@ -61,7 +61,6 @@ namespace UnknownLib.Managers
                 default:
                     return "Cannot hash with this input";
             }
-            return "Something went wrong during hashing attempt";
         }
 
         public string Hash(HashType type, string input, string password)
@@ -69,7 +68,8 @@ namespace UnknownLib.Managers
             switch (type)
             {
                 case HashType.HmacSha1:
-                    break;
+                    HmacSha1 hmacSha1 = new HmacSha1();
+                    return hmacSha1.Hash(input, password);
                 case HashType.HmacSha2:
                     break;
                 default:
@@ -100,7 +100,6 @@ namespace UnknownLib.Managers
                 default:
                     return null;
             }
-            return null;
         }
 
         public byte[] Hash(HashType type, byte[] input, byte[] password)
@@ -108,7 +107,8 @@ namespace UnknownLib.Managers
             switch (type)
             {
                 case HashType.HmacSha1:
-                    break;
+                    HmacSha1 hmacSha1 = new HmacSha1();
+                    return hmacSha1.Hash(input, password);
                 case HashType.HmacSha2:
                     break;
                 default:
