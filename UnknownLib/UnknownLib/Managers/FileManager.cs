@@ -1,8 +1,9 @@
-﻿using UnknownLib.Files;
+﻿using System;
+using UnknownLib.Files;
 
 namespace UnknownLib.Managers
 {
-    public class FileManager
+    public class FileManager : IDisposable
     {
         private FromTxt fromTxt = new FromTxt();
         private ToTxt toTxt = new ToTxt();
@@ -42,6 +43,14 @@ namespace UnknownLib.Managers
         public bool CharToTxt(char input)
         {
             return toTxt.CharToTxt(input);
+        }
+
+        public void Dispose()
+        {
+            fromTxt = null;
+            toTxt = null;
+            fromCsv = null;
+            toCsv = null;
         }
 
         public string StringFromTxt()

@@ -21,7 +21,8 @@ namespace UnknownLib.Managers
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            encrypt = null;
+            decrypt = null;
         }
 
         public string EncryptString(string input, string password)
