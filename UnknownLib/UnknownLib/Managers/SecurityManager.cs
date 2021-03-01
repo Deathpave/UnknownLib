@@ -2,11 +2,10 @@
 using UnknownLib.Decryption;
 using UnknownLib.Encryption;
 using UnknownLib.Hashing;
-using UnknownLib.Managers.Interfaces;
 
 namespace UnknownLib.Managers
 {
-    public class SecurityManager : IEncryption, IDecryption, IDisposable
+    public class SecurityManager : IDisposable
     {
         private Encrypt encrypt = new Encrypt();
         private Decrypt decrypt = new Decrypt();

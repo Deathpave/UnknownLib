@@ -1,9 +1,8 @@
 ﻿using UnknownLib.Binary;
-using UnknownLib.Managers.Interfaces;
 
 namespace UnknownLib.Managers
 {
-    public class BinaryManager : IBinary
+    public class BinaryManager
     {
         FromBinary fromBinary = new FromBinary();
         ToBinary toBinary = new ToBinary();

@@ -1,9 +1,8 @@
 ﻿using UnknownLib.Files;
-using UnknownLib.Managers.Interfaces;
 
 namespace UnknownLib.Managers
 {
-    public class FileManager : ITxt
+    public class FileManager
     {
         private FromTxt fromTxt = new FromTxt();
         private ToTxt toTxt = new ToTxt();
