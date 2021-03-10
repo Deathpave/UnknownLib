@@ -89,7 +89,7 @@ namespace UnknownLib.Managers
             return fromCsv.ToString();
         }
 
-        public List<string> ListStringArraysFromCsv()
+        public List<string[]> ListStringArraysFromCsv()
         {
             return fromCsv.ListStringArraysFromCsv();
         }
