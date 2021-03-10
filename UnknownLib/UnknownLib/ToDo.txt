@@ -1,7 +1,5 @@
 ﻿---------- To do list ----------
 
-Rework encryption/decryption, so that there is a standard rijndael, that takes a pass, pass and itterations and a rijndaelplus.
-That takes pass, salt, itterations.
 Set up to have different types of encryption methods?
 
 Make networkmanager
