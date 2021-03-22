@@ -4,8 +4,10 @@ using System.Linq;
 using System.Net.NetworkInformation;
 using System.Reflection;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Threading;
+using UnknownLib.Hooks;
 
 namespace LibTester
 {
@@ -13,20 +15,13 @@ namespace LibTester
     {
         /// <summary>
         /// This project is used for testing the library and its functions only
-        /// It is not ment for running calculations a data edeting it self
+        /// It is not ment for running calculations or data edeting it self
         /// </summary>
         /// <param name="args"></param>
-        [STAThread]
+
         static void Main(string[] args)
         {
-            UnknownLib.Managers.SecurityManager sec = new UnknownLib.Managers.SecurityManager();
-            string a = "Kage er godt!";
-            Console.WriteLine(a);
-            Console.WriteLine("\nMd5 hash:");
-            Console.WriteLine(sec.Hash(UnknownLib.Hashing.HashType.Md5Hash, a));
-            Console.WriteLine("\nSha1 hash:");
-            Console.WriteLine(sec.Hash(UnknownLib.Hashing.HashType.Sha1Hash, a));
-            Console.ReadLine();
+
         }
     }
 }

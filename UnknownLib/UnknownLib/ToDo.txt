@@ -5,3 +5,5 @@ Set up to have different types of encryption methods?
 Make networkmanager
 
 Add error handling to classes and managers.
+
+Make a Hook manager, so that hook classes aint public

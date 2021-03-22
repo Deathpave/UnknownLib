@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnknownLib", "UnknownLib\Un
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibTester", "LibTester\LibTester.csproj", "{9EF3284F-A390-4C04-AF89-B41919125DBE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfFrame", "WpfFrame\WpfFrame.csproj", "{4F21EE94-F1B7-48D8-ACFC-A5FA9776CFD2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{9EF3284F-A390-4C04-AF89-B41919125DBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EF3284F-A390-4C04-AF89-B41919125DBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EF3284F-A390-4C04-AF89-B41919125DBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F21EE94-F1B7-48D8-ACFC-A5FA9776CFD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F21EE94-F1B7-48D8-ACFC-A5FA9776CFD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F21EE94-F1B7-48D8-ACFC-A5FA9776CFD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F21EE94-F1B7-48D8-ACFC-A5FA9776CFD2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
