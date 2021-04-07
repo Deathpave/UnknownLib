@@ -20,8 +20,11 @@ namespace LibTester
         /// </summary>
         /// <param name="args"></param>
 
+        static HookManager hookManager = new HookManager();
+
         static void Main(string[] args)
         {
+
         }
     }
 }

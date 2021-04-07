@@ -29,7 +29,6 @@ namespace WpfFrame
         {
             InitializeComponent();
             hookManager.KeyPressed += Test;
-            hookManager.StartKeyboardHook();
             //KeyboardHook.KeyPressed += Test;
             //hook.StartHook();
         }

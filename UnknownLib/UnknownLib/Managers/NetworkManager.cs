@@ -8,7 +8,7 @@ using UnknownLib.NetworkTools;
 
 namespace UnknownLib.Managers
 {
-    public class NetworkManager
+    public class NetworkManager : IDisposable
     {
         private Connectivity _connectivity = new Connectivity();
         private DHCP _dhcp = new DHCP();
@@ -42,5 +42,12 @@ namespace UnknownLib.Managers
             return _dns.GetHostnameFromIp(ip);
         }
         #endregion
+
+        public void Dispose()
+        {
+            _connectivity = null;
+            _dhcp = null;
+            _dns = null;
+        }
     }
 }

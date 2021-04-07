@@ -8,7 +8,7 @@ using UnknownLib.Hooks;
 
 namespace UnknownLib.Managers
 {
-    public class HookManager
+    public class HookManager : IDisposable
     {
         private KeyboardHook _keyboardhook = new KeyboardHook();
         public PropertyChangedEventHandler KeyPressed;
@@ -36,6 +36,12 @@ namespace UnknownLib.Managers
         private void Testing(object sender, PropertyChangedEventArgs e)
         {
             this.KeyPressed?.Invoke(e, null);
+        }
+
+        public void Dispose()
+        {
+            _keyboardhook = null;
+            KeyPressed -= Testing;
         }
     }
 }
