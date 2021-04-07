@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +11,12 @@ namespace UnknownLib.Managers
     public class HookManager
     {
         private KeyboardHook _keyboardhook = new KeyboardHook();
+        public PropertyChangedEventHandler KeyPressed;
+
+        public HookManager()
+        {
+            KeyboardHook.KeyPressed += Testing;
+        }
 
         public void StartKeyboardHook()
         {
@@ -24,6 +31,11 @@ namespace UnknownLib.Managers
         public string GetKeyboardKey()
         {
             return _keyboardhook.Returnkey();
+        }
+
+        private void Testing(object sender, PropertyChangedEventArgs e)
+        {
+            this.KeyPressed?.Invoke(e, null);
         }
     }
 }

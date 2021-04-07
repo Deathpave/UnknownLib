@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using UnknownLib.Hooks;
+using UnknownLib.Managers;
 
 namespace WpfFrame
 {
@@ -22,17 +23,21 @@ namespace WpfFrame
     /// </summary>
     public partial class MainWindow : Window
     {
-        KeyboardHook hook = new KeyboardHook();
+        //KeyboardHook hook = new KeyboardHook();
+        HookManager hookManager = new HookManager();
         public MainWindow()
         {
             InitializeComponent();
-            KeyboardHook.KeyPressed += Test;
-            hook.StartHook();
+            hookManager.KeyPressed += Test;
+            hookManager.StartKeyboardHook();
+            //KeyboardHook.KeyPressed += Test;
+            //hook.StartHook();
         }
 
         public void Test(object sender, PropertyChangedEventArgs e)
         {
-            TextyBlock.Text = hook.Returnkey();
+            //TextyBlock.Text = hook.Returnkey();
+            TextyBlock.Text = hookManager.GetKeyboardKey();
         }
     }
 }

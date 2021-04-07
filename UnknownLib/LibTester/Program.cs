@@ -8,6 +8,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Threading;
 using UnknownLib.Hooks;
+using UnknownLib.Managers;
 
 namespace LibTester
 {
@@ -21,7 +22,6 @@ namespace LibTester
 
         static void Main(string[] args)
         {
-
         }
     }
 }
