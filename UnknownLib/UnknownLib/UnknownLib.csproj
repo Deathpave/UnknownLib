@@ -66,6 +66,7 @@
     <Compile Include="Hooks\KeyboardHook.cs" />
     <Compile Include="Managers\BinaryManager.cs" />
     <Compile Include="Managers\FileManager.cs" />
+    <Compile Include="Managers\HookManager.cs" />
     <Compile Include="Managers\NetworkManager.cs" />
     <Compile Include="Managers\SecurityManager.cs" />
     <Compile Include="Network Tools\Connectivity.cs" />
