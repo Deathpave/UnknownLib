@@ -8,6 +8,9 @@ using UnknownLib.Hooks;
 
 namespace UnknownLib.Managers
 {
+    /// <summary>
+    /// KeyboardHook do not work with console applications
+    /// </summary>
     public class HookManager : IDisposable
     {
         private KeyboardHook _keyboardhook = new KeyboardHook();

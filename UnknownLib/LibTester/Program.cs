@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Net.NetworkInformation;
 using System.Reflection;
@@ -19,8 +20,6 @@ namespace LibTester
         /// It is not ment for running calculations or data edeting it self
         /// </summary>
         /// <param name="args"></param>
-
-        static HookManager hookManager = new HookManager();
 
         static void Main(string[] args)
         {
