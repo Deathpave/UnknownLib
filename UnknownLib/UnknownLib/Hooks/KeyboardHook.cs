@@ -1,17 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsInput;
 
 namespace UnknownLib.Hooks
 {
-    public class KeyboardHook
+    internal class KeyboardHook
     {
         public static PropertyChangedEventHandler KeyPressed;
 
