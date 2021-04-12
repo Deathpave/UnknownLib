@@ -9,14 +9,7 @@ namespace UnknownLib.Managers
         ToBinary toBinary = new ToBinary();
         public string BinaryStringToString(string BinaryInput)
         {
-            if (fromBinary.BinaryStringToString(BinaryInput) != null && fromBinary.BinaryStringToString(BinaryInput) != string.Empty)
-            {
-                return fromBinary.BinaryStringToString(BinaryInput);
-            }
-            else
-            {
-                return "Something went wrong converting binary to string";
-            }
+            return fromBinary.BinaryStringToString(BinaryInput);
         }
 
         public void Dispose()
@@ -27,14 +20,7 @@ namespace UnknownLib.Managers
 
         public string StringToBinary(string input)
         {
-            if (toBinary.StringToBinary(input) != null && toBinary.StringToBinary(input) != string.Empty)
-            {
-                return toBinary.StringToBinary(input);
-            }
-            else
-            {
-                return "Something went wrong converting string to binary";
-            }
+            return toBinary.StringToBinary(input);
         }
     }
 }
