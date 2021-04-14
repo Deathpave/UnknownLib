@@ -2,4 +2,8 @@
 
 Set up to have different types of encryption methods?
 
-Add error handling to classes and managers.
+Make recursive mapping.
+file finding by single
+file finding by list of files
+file finding by contains name
+add to files manager
