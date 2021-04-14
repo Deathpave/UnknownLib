@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Threading;
 using UnknownLib.Hooks;
 using UnknownLib.Managers;
+using UnknownLib.TestEnvironment;
 
 namespace LibTester
 {
@@ -23,7 +24,20 @@ namespace LibTester
 
         static void Main(string[] args)
         {
-
+            TestClass tc = new TestClass();
+            Console.WriteLine("This process may take some time depending on the amount of files on your pc");
+            tc.RecursiveMapping(@"C:\Uniconta\PluginPath\fr");
+            while (tc.GetMapping() == null)
+            {
+                Thread.Sleep(10000);
+                Console.WriteLine("Checking if mapping is done");
+            }
+            Console.WriteLine("Mapping is done!");
+            foreach (string line in tc.GetMapping())
+            {
+                Console.WriteLine(line);
+            }
+            Console.ReadLine();
         }
     }
 }

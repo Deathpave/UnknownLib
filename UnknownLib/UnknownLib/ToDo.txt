@@ -7,3 +7,5 @@ file finding by single
 file finding by list of files
 file finding by contains name
 add to files manager
+
+add threadpool for better performance on recursive mapping
