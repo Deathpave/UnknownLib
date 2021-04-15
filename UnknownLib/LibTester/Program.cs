@@ -26,7 +26,9 @@ namespace LibTester
         {
             TestClass tc = new TestClass();
             Console.WriteLine("This process may take some time depending on the amount of files on your pc");
-            tc.RecursiveMapping(@"C:\Uniconta\PluginPath\fr");
+            //tc.RecursiveMapping(@"C:\Uniconta\PluginPath\fr");
+            tc.FindFile("dev", @"C:\Uniconta\PluginPath");
+
             while (tc.GetMapping() == null)
             {
                 Thread.Sleep(10000);

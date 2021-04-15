@@ -2,10 +2,9 @@
 
 Set up to have different types of encryption methods?
 
-Make recursive mapping.
-file finding by single
+Make recursive mapping. - done
 file finding by list of files
-file finding by contains name
+file finding by contains name - done
 add to files manager
 
-add threadpool for better performance on recursive mapping
+add threadpool for better performance on recursive mapping?
