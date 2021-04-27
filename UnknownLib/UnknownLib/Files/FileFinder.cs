@@ -8,19 +8,18 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Timers;
 
-namespace UnknownLib.TestEnvironment
+namespace UnknownLib.Files
 {
-    public class TestClass
+    internal class FileFinder
     {
         private List<string> _pathNames;
         private System.Timers.Timer _timer;
         private bool _running;
         private List<string> res;
-        public TestClass()
+        public FileFinder()
         {
-            res = new List<string>();
             _timer = new System.Timers.Timer();
-            _timer.Interval = 10000;
+            _timer.Interval = 5000;
             _timer.Elapsed += _timer_Elapsed;
             _running = false;
         }
@@ -33,6 +32,7 @@ namespace UnknownLib.TestEnvironment
         /// <summary>
         /// GetMapping returns the list of found file and or folder paths
         /// Deppending on what method has been runned
+        /// Returns null while mapping is is in progress
         /// </summary>
         /// <returns></returns>
         public List<string> GetMapping()

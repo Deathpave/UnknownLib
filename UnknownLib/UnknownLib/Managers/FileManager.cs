@@ -10,6 +10,33 @@ namespace UnknownLib.Managers
         private ToTxt toTxt = new ToTxt();
         private FromCsv fromCsv = new FromCsv();
         private ToCsv toCsv = new ToCsv();
+        private FileFinder fileFinder = new FileFinder();
+
+        public List<string> GetMapping()
+        {
+            return fileFinder.GetMapping();
+        }
+
+        /// <summary>
+        /// Call GetMapping() after to get results.
+        /// GetMapping returns null, while mapping process is running.
+        /// </summary>
+        /// <param name="filename"></param>
+        /// <param name="startFolderPath"></param>
+        public void FindFile(string filename, string startFolderPath)
+        {
+            fileFinder.FindFile(filename, startFolderPath);
+        }
+
+        /// <summary>
+        /// Call GetMapping() after to get results.
+        /// GetMapping returns null, while mapping process is running.
+        /// </summary>
+        /// <param name="startingFolder"></param>
+        public void RecursiveMapping(string startingFolder)
+        {
+            fileFinder.RecursiveMapping(startingFolder);
+        }
 
         public bool AppendCharsToTxt(char[] input)
         {
@@ -52,6 +79,7 @@ namespace UnknownLib.Managers
             toTxt = null;
             fromCsv = null;
             toCsv = null;
+            fileFinder = null;
         }
 
         public string StringFromTxt()

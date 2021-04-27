@@ -49,6 +49,7 @@
     <Compile Include="Binary\ToBinary.cs" />
     <Compile Include="Decryption\Decrypt.cs" />
     <Compile Include="Encryption\Encrypt.cs" />
+    <Compile Include="Files\FileFinder.cs" />
     <Compile Include="Files\FromCsv.cs" />
     <Compile Include="Files\FromTxt.cs" />
     <Compile Include="Files\ToCsv.cs" />
@@ -74,7 +75,6 @@
     <Compile Include="Network Tools\DNS.cs" />
     <Compile Include="Objects\ReadObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestEnvironment\TestClass.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ToDo.txt" />
@@ -82,6 +82,8 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="TestEnvironment\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
